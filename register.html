@@ -1,0 +1,58 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>form</title>
+</head>
+<body style="text-align: center">
+<div><img src="img/bg_nav.jpg" height="190" width="1003"/>
+    <form action="success.html" method="post">
+        <!--required 不可为空，input公有属性，除button，submit，reset
+        minlength maxlength 长度控制 min max number range date使用 step 步长--
+        novalidate 禁止表单验证-->
+        <label for="t">text：</label>
+        <input type="text" id="t">
+        <br>
+        普通文本框：<input type="text" minlength="1" maxlength="5">
+        <br>
+        搜索文本框：<input type="search">
+        <br>
+        邮件文本框：<input type="email">
+        <br>
+        地址文本框：<input type="url">
+        <br>
+        telephone文本框：<input type="tel">
+        <br>
+        number文本框：<input type="number" required min="1" max="5">
+        <br>
+        range文本框：<input type="range" oninput="y.value=this.value">
+        <output id="x" name="y">0</output>
+        <br>
+        date文本框：<input type="date">
+        <br>
+        week文本框：<input type="week">
+        <br>
+        month文本框：<input type="month">
+        <br>
+        time文本框：<input type="time">
+        <br>
+        datetimelocal文本框：<input type="datetime-local">
+        <br>
+        color文本框：<input type="color">
+        <br>
+        datalist文本框：<input type="text" list="test"  multiple>
+        <datalist id="test">
+            <option value="1"></option>
+            <option value="2"></option>
+            <option value="3"></option>
+            <option value="4"></option>
+        </datalist>
+        <br>
+        <input type="reset" value="重置">
+        <input type="submit" value="提交">
+
+
+    </form>
+</div>
+
+</body>
+</html>
